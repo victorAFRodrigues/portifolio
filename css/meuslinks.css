@@ -12,6 +12,18 @@
     /* Tech colors */
     --php: #484C89;
     --js: #fbff00;
+    --ts: #345a97;
+    --wordpress: #6d6d6d;
+    --sass: #CE679A;
+    --angular: transparent;
+    --docker: #0997E5;
+    --tailwind: #38BDF8;
+
+    /* Social colors */
+
+    --linkedin: #0073b1;
+    --whatsapp: #25D366;
+    --github: #000000;
 }
 
 *{
@@ -110,12 +122,13 @@ a{
 
 .content__blocks{
     background-color: var(--color5);
- 
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-top:0;
+    transition: margin-top 0.2s ease 0s;
 }
 
 .block__content{
@@ -147,6 +160,41 @@ a{
     font-size: 1em;
 }
 
+.hardSkills__content > i {
+    transition: background 2s ease-in-out 0;
+}
+
+/* Techs hovers */
+.php:hover, .php:focus{
+    color: var(--php);
+}
+.js:hover{
+    color: var(--js);
+}
+.ts:hover{
+    color: var(--ts);
+}
+.wp:hover{
+    color: var(--wordpress);
+}
+.sass:hover{
+    color: var(--sass);
+}
+.angular:hover, .social_icons:hover i.angular{
+    background: linear-gradient(45deg, #ff0057, #9a00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--angular);
+}
+.docker:hover{
+    color: var(--docker);
+}
+.tailwind:hover{
+    color: var(--tailwind);
+}
+
+
+
 .social__content{
     height: 5rem;
     width: 100%;
@@ -164,12 +212,28 @@ a{
     color: var(--color1);
     font-size: 0.4em;
 }
+
 .social_icon>.block__content{
     width: 100%;
 }
+
 .social_icons{
     align-items: center;
 }
+
+.social_icons.d:hover i {
+    color: var(--whatsapp);
+}
+
+.social_icons.f:hover i {
+    color: var(--linkedin);
+}
+
+.social_icons.g:hover  i {
+    color: var(--github);
+}
+
+
 .content__blocks > i{
     font-size: 3em;
 }
@@ -188,6 +252,11 @@ a{
     color: var(--color4);
     font-weight: 500;
 }
+
+.content__blocks:hover{
+    margin-top: -0.3em;
+}
+
 
 @media  screen and (min-width: 425px){
 
