@@ -193,3 +193,16 @@ a{
         
     }
 }
+
+@media  screen and (min-width: 768px){
+
+    .block__content > i, .content__blocks > i {
+        font-size: 2em;
+    }
+    
+    .portifolio h2{
+        font-size: 1em;
+        
+    }
+}
+
