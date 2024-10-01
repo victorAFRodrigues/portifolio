@@ -288,6 +288,6 @@ a{
 
 @media  screen and (min-height: 680px){
     .meuslinks{
-        max-height: 700px;
+        padding:0;
     }
 }
