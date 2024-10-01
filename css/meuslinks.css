@@ -8,6 +8,10 @@
     --color3: #151515;
     --color4: #ffffff;
     --color5: #202020;
+
+    /* Tech colors */
+    --php: #484C89;
+    --js: #fbff00;
 }
 
 *{
@@ -65,8 +69,11 @@ a{
     "a a a a"
     "b b b b"
     "c c d e"
-    "c c f g" 
-    "h h h h";
+    "c c d e"
+    "c c f g"
+    "c c f g"  
+    "h h h h"
+    "h h h h"; 
 }
 
 .a{
@@ -114,7 +121,7 @@ a{
 .block__content{
     padding: 15px;
     display: flex;
-    gap: 15px;
+    gap: 5px 15px;
 }
 
 .block__content > .img{
@@ -188,21 +195,17 @@ a{
         font-size: 1.7em;
     }
     
-    .portifolio h2{
-        font-size: 1.4em;
-        
-    }
 }
 
 @media  screen and (min-width: 768px){
 
-    .block__content > i, .content__blocks > i {
+    i{
         font-size: 2em;
     }
-    
-    .portifolio h2{
-        font-size: 1em;
-        
+
+    .block__content > i, .content__blocks > i {
+        font-size: 2.5em;
     }
+    
 }
 
